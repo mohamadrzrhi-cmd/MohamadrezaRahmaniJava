@@ -1,0 +1,301 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package javatest;
+
+/**
+ *
+ * @author Mohamadreza
+ */
+import java.util.Scanner;
+import java.util.Random;
+public class JavaTest {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("input number:");
+       /* int number = input.nextInt();
+        int CountDigit = 0;
+        int Digit = 0;
+        int SumDigit = 0;
+        int ZarbDigit = 1;
+        int Min = 9;
+        int Max = 0;
+        int Zoj = 0;
+        int Fard = 0;
+        int reverse = 0;
+        
+        while(number > 0){
+            Digit = number % 10;
+            SumDigit += Digit;
+            if (Digit!= 0) {
+                ZarbDigit *= Digit;
+            }
+            if(Digit < Min)
+            {
+               Min = Digit; 
+            }
+            if (Digit > Max) {
+                Max = Digit;
+            }
+            if (Digit % 2 == 0) {
+                Zoj++;
+            }
+            else
+            {
+                Fard++;
+            }
+            reverse = reverse * 10 + Digit;
+             number = number / 10;
+            CountDigit++;
+        }
+        System.out.println("CountDigit :"+CountDigit);
+        System.out.println("SumDigit :"+SumDigit);
+        System.out.println("ZarbDigit : "+ ZarbDigit);
+        System.out.println("Min :" + Min + " Max : " + Max);
+        System.out.println("Zoj :" + Zoj + " Fard :" + Fard);
+        System.out.println("Reverse :" + reverse);
+        _________________________________________________*/
+       /*int Count = 0;
+       int Sum = 0;
+       boolean Aval = true;
+       int number = input.nextInt();
+        for (int i = 1; i <= number; i++) {
+            if (number % i == 0) {
+                Count++;
+                Sum += i;
+                
+            }
+            }
+        if (Count != 2) {
+                    for (int i = 2; i < number; i++) {
+                        if (number % i == 0) {
+                            System.out.println(i);
+                        }
+            }
+                }
+
+            if (Count == 2) {
+                System.out.println("Aval : Yes");
+            }
+            else
+            {
+                System.out.println("Aval : No ");
+            }
+           
+            if (Sum - number == number) {
+                System.out.println("Adad Kamel Ast");
+            
+        }
+            else
+            {
+                System.out.println("Adad Kamel Nist");
+            }
+            System.out.println("TedadMaghsoomAlay:" + Count);
+            System.out.println("Sum :" + Sum);
+       _____________________________________________*/
+       
+      /* int Steps = 0;
+       int Max = 0;
+       int CountZoj = 0;
+       int CountFard = 0;
+       
+       int number = input.nextInt();
+        
+       while(number > 1){
+        if (number % 2 == 0) {
+            number = number /2;
+            System.out.println(number);
+            CountZoj++;
+        }
+        else
+        {
+            number = number * 3 + 1 ;
+            System.out.println(number);
+            CountFard++;
+        }
+        Steps++;
+        if (number > Max) {
+            Max = number;
+        }
+                
+                
+
+    }
+       System.out.println("Steps:" + Steps);
+                System.out.println("Max :" + Max);
+                System.out.println("Zoj :" + CountZoj + " Fard :" + CountFard);
+________________________________________________________________________________*/
+      
+      
+     /*while(true){
+      System.out.println("1-Mojodi  2-Variz  3-Bardasht  4-exit");
+      int number = input.nextInt();
+      double Mojodi = 10000000;
+      switch(number)
+      {
+          case 1:
+              System.out.println("Mojodi :" +Mojodi);
+              break;
+              
+          case 2:
+              System.out.println("Variz konid");
+               double Variz = input.nextDouble();
+               if (Variz < 0) {
+                   System.out.println("Mablagh Bayad Mosbat Bashad");
+              }
+               else{
+               Mojodi += Variz;
+               System.out.println("Mojodi :" +Mojodi);
+               break;
+               }
+               
+          case 3:
+              System.out.println("Bardasht konid");
+              double Bardasht = input.nextDouble();
+
+              if (Bardasht < 0 || Bardasht > Mojodi || Bardasht % 50000 != 0) {
+                  System.out.println("error");
+              }
+              else{
+              Mojodi-=Bardasht;
+              System.out.println("Mojodi :" + Mojodi);
+              break;
+              }
+              
+          case 4:
+              System.exit(0);
+              break;
+              
+          default:
+              System.out.println("Choos 1-4");
+      }
+     }
+__________________________________________________________________*/
+     
+        /*Random rand = new Random();   
+        int target = rand.nextInt(100);
+        int MaxGuss = 7;
+        int Score = 100;
+        int PreGuss = 0;
+        int Try = 0;
+        
+        for (int i = 1; i <= MaxGuss; i++) {
+            System.out.println("Guss ? :");
+            int guss = input.nextInt();
+            
+            if (guss < 1 || guss > 100) {
+                System.out.println("just 1-100");
+            }
+            else{
+             if (guss == target) {
+                System.out.println("Wiiiin");
+                break;
+            }
+              if (guss == PreGuss) {
+                System.out.println("Hads Tekrari");
+                Score -= 15; 
+                
+
+              }
+              if ( guss > target) {
+                System.out.println("target koochek tar ast");
+                //System.out.println("Guss Tekrari");
+                Score -= 10;
+                PreGuss = guss;
+                
+
+
+            }
+              if (guss < target)
+            {
+                System.out.println("target Bozorg tar ast");
+                Score -= 10;
+                PreGuss = guss;
+                
+
+
+            }
+             
+            }
+             if
+              (Score < 0) {
+                 System.out.println("Score < 0");
+                 System.out.println("Looose");
+                 System.out.println("Target :" + target);
+                 System.exit(0);
+                
+            }
+             if (i == MaxGuss) {
+                 System.out.println(target);
+            }
+             Try++;
+             System.out.println("Try :" + Try);
+             System.out.println("Score : " + Score);
+             
+
+             }
+     __________________________________________________________*/
+       
+        /*int UnderAverage = 0;
+        int exellent = 0;
+        int Pass = 0;
+        double Min = 20;
+        double Max = 0;
+        double AllScore = 0;
+        System.out.println("enter stu :");
+        double CountStu =input.nextInt();
+        
+        while (CountStu <= 0) {
+            System.out.println("Stu Bayad Mosbat Bashad");
+            CountStu =input.nextInt();
+        }
+        for (int i = 1; i <= CountStu; i++) {
+            
+            System.out.println("enter Score :");
+            double Score = input.nextDouble();
+            
+            while(Score < 0 || Score > 20)
+            {
+                System.out.println("Nomre Bayad Bein 0 Ta 20 Bashad");
+                Score = input.nextDouble();
+            }
+            
+            System.out.println("Score of stu " +  i + " : " + Score);
+            AllScore += Score;
+            
+            if (Score > Max) {
+               Max = Score;
+            }
+            if (Score < Min) {
+                Min = Score;
+            }
+            if (Score >= 10) {
+                Pass++;
+            }
+            if (Score >= 18) {
+                exellent++;
+            }
+            if (Score < AllScore / CountStu ) {
+                UnderAverage++;
+            }
+            
+            
+        }
+        double Percent = (Pass * 100.0) / CountStu;
+        System.out.println("SumScore : " + AllScore + " Average : " + AllScore / CountStu);
+        System.out.println("Max :" + Max);
+        System.out.println("Min :" + Min);
+        System.out.println("Pass :" + Pass);
+        System.out.println("Exellent :" + exellent);
+        System.out.println("Percent" + Percent);
+        _________________________________________________________________*/
+        
+        //------Finished------ 
+    }
+}
+ 
